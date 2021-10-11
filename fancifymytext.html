@@ -11,6 +11,7 @@
 
 	<body>
 		<h1>Fancify my Text</h1>
+        
 
         <form>
             <fieldset>
@@ -32,12 +33,14 @@
             <button  onclick= "hello()" type="button">Bigger!</button>
             <br>
             
-            <input type="radio" id="html" name="Fancy" value="FancyShmancy">
+            <input type="radio" onclick= "change()" onchange = "popsUp()" id="fan" name="Fancy" value="FancyShmancy">
             <label for="FancySchmancy">FancyShmancy</label><br>
             
-            <input type="radio" id="html" name="Boring" value="BoringBetty">
+            <input type="radio" onclick = "changeBack()" onchange = "normalFont()" id="bor" name="Boring" value="BoringBetty">
             <label for="BoringBetty">BoringBetty</label><br>
               
+            <input type="radio" onclick = "uppercase()" id="M" name="Mo" value="Moo">
+            <label for="Moo">Moo</label><br>
               
             </label> 
 
@@ -52,3 +55,4 @@
 		
 	</body>
 </html>
+
